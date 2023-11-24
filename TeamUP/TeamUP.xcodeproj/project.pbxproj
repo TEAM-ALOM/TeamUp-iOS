@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A07DD8EE2B110C2F006DB7E0 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07DD8ED2B110C2F006DB7E0 /* Color+Extension.swift */; };
+		A07DD8F02B110E0F006DB7E0 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07DD8EF2B110E0F006DB7E0 /* Font+Extension.swift */; };
+		A07DD8F32B111AE0006DB7E0 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8E62B110B29006DB7E0 /* Pretendard-Black.otf */; };
+		A07DD8F42B111AE5006DB7E0 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8EA2B110B29006DB7E0 /* Pretendard-ExtraBold.otf */; };
+		A07DD8F52B111AE5006DB7E0 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8E82B110B29006DB7E0 /* Pretendard-Regular.otf */; };
+		A07DD8F62B111AE5006DB7E0 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8EC2B110B29006DB7E0 /* Pretendard-Bold.otf */; };
+		A07DD8F72B111AE5006DB7E0 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8E92B110B29006DB7E0 /* Pretendard-Light.otf */; };
+		A07DD8F82B111AE5006DB7E0 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8EB2B110B29006DB7E0 /* Pretendard-Medium.otf */; };
+		A07DD8F92B111AE5006DB7E0 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8E52B110B29006DB7E0 /* Pretendard-Thin.otf */; };
+		A07DD8FA2B111AE5006DB7E0 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8E42B110B29006DB7E0 /* Pretendard-ExtraLight.otf */; };
+		A07DD8FB2B111AE5006DB7E0 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8E72B110B29006DB7E0 /* Pretendard-SemiBold.otf */; };
 		A0E007C32B0F552500B2476B /* TeamUPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E007C22B0F552500B2476B /* TeamUPApp.swift */; };
 		A0E007C52B0F552500B2476B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E007C42B0F552500B2476B /* ContentView.swift */; };
 		A0E007C72B0F552700B2476B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E007C62B0F552700B2476B /* Assets.xcassets */; };
@@ -15,6 +26,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A07DD8E42B110B29006DB7E0 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		A07DD8E52B110B29006DB7E0 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		A07DD8E62B110B29006DB7E0 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		A07DD8E72B110B29006DB7E0 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		A07DD8E82B110B29006DB7E0 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		A07DD8E92B110B29006DB7E0 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		A07DD8EA2B110B29006DB7E0 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		A07DD8EB2B110B29006DB7E0 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		A07DD8EC2B110B29006DB7E0 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		A07DD8ED2B110C2F006DB7E0 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		A07DD8EF2B110E0F006DB7E0 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		A07DD8F12B111337006DB7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A0E007BF2B0F552500B2476B /* TeamUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E007C22B0F552500B2476B /* TeamUPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUPApp.swift; sourceTree = "<group>"; };
 		A0E007C42B0F552500B2476B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A07DD8F22B111554006DB7E0 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A0E007C42B0F552500B2476B /* ContentView.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		A0E007B62B0F552500B2476B = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +84,7 @@
 		A0E007C12B0F552500B2476B /* TeamUP */ = {
 			isa = PBXGroup;
 			children = (
+				A07DD8F12B111337006DB7E0 /* Info.plist */,
 				A0E007D42B0F56A200B2476B /* Feature */,
 				A0E007D32B0F560800B2476B /* App */,
 				A0E007D22B0F55DD00B2476B /* Resource */,
@@ -74,6 +106,8 @@
 		A0E007D02B0F55D200B2476B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A07DD8ED2B110C2F006DB7E0 /* Color+Extension.swift */,
+				A07DD8EF2B110E0F006DB7E0 /* Font+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -106,7 +140,7 @@
 		A0E007D42B0F56A200B2476B /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				A0E007C42B0F552500B2476B /* ContentView.swift */,
+				A07DD8F22B111554006DB7E0 /* Test */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -114,6 +148,15 @@
 		A0E007D52B0F56F500B2476B /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				A07DD8E62B110B29006DB7E0 /* Pretendard-Black.otf */,
+				A07DD8EC2B110B29006DB7E0 /* Pretendard-Bold.otf */,
+				A07DD8EA2B110B29006DB7E0 /* Pretendard-ExtraBold.otf */,
+				A07DD8E42B110B29006DB7E0 /* Pretendard-ExtraLight.otf */,
+				A07DD8E92B110B29006DB7E0 /* Pretendard-Light.otf */,
+				A07DD8EB2B110B29006DB7E0 /* Pretendard-Medium.otf */,
+				A07DD8E82B110B29006DB7E0 /* Pretendard-Regular.otf */,
+				A07DD8E72B110B29006DB7E0 /* Pretendard-SemiBold.otf */,
+				A07DD8E52B110B29006DB7E0 /* Pretendard-Thin.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -177,8 +220,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E007D72B0F573800B2476B /* Launch Screen.storyboard in Resources */,
+				A07DD8F92B111AE5006DB7E0 /* Pretendard-Thin.otf in Resources */,
+				A07DD8F72B111AE5006DB7E0 /* Pretendard-Light.otf in Resources */,
+				A07DD8FB2B111AE5006DB7E0 /* Pretendard-SemiBold.otf in Resources */,
+				A07DD8F52B111AE5006DB7E0 /* Pretendard-Regular.otf in Resources */,
+				A07DD8F62B111AE5006DB7E0 /* Pretendard-Bold.otf in Resources */,
 				A0E007CA2B0F552700B2476B /* Preview Assets.xcassets in Resources */,
+				A07DD8F42B111AE5006DB7E0 /* Pretendard-ExtraBold.otf in Resources */,
+				A07DD8F32B111AE0006DB7E0 /* Pretendard-Black.otf in Resources */,
 				A0E007C72B0F552700B2476B /* Assets.xcassets in Resources */,
+				A07DD8F82B111AE5006DB7E0 /* Pretendard-Medium.otf in Resources */,
+				A07DD8FA2B111AE5006DB7E0 /* Pretendard-ExtraLight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E007C52B0F552500B2476B /* ContentView.swift in Sources */,
+				A07DD8EE2B110C2F006DB7E0 /* Color+Extension.swift in Sources */,
+				A07DD8F02B110E0F006DB7E0 /* Font+Extension.swift in Sources */,
 				A0E007C32B0F552500B2476B /* TeamUPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,11 +381,13 @@
 				DEVELOPMENT_TEAM = 47VP7M3T34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeamUP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,11 +412,13 @@
 				DEVELOPMENT_TEAM = 47VP7M3T34;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeamUP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
