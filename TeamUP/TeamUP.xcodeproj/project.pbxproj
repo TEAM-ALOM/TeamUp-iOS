@@ -101,6 +101,13 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		A07DD90A2B11FB56006DB7E0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		A0E007B62B0F552500B2476B = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +127,7 @@
 		A0E007C12B0F552500B2476B /* TeamUP */ = {
 			isa = PBXGroup;
 			children = (
+				A07DD90A2B11FB56006DB7E0 /* Network */,
 				A07DD9032B11DFFF006DB7E0 /* Helper */,
 				A0E007D42B0F56A200B2476B /* Feature */,
 				A0E007D32B0F560800B2476B /* App */,
