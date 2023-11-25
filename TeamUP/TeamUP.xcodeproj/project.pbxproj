@@ -37,7 +37,7 @@
 		A07DD8EC2B110B29006DB7E0 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		A07DD8ED2B110C2F006DB7E0 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		A07DD8EF2B110E0F006DB7E0 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
-		A07DD8F12B111337006DB7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A07DD8F12B111337006DB7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E007BF2B0F552500B2476B /* TeamUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E007C22B0F552500B2476B /* TeamUPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUPApp.swift; sourceTree = "<group>"; };
 		A0E007C42B0F552500B2476B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +65,42 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		A07DD8FE2B113375006DB7E0 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A07DD8FF2B11337D006DB7E0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A07DD9002B113395006DB7E0 /* Matching */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Matching;
+			sourceTree = "<group>";
+		};
+		A07DD9012B1133A7006DB7E0 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		A07DD9032B11DFFF006DB7E0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A07DD8F12B111337006DB7E0 /* Info.plist */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		A0E007B62B0F552500B2476B = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +120,7 @@
 		A0E007C12B0F552500B2476B /* TeamUP */ = {
 			isa = PBXGroup;
 			children = (
-				A07DD8F12B111337006DB7E0 /* Info.plist */,
+				A07DD9032B11DFFF006DB7E0 /* Helper */,
 				A0E007D42B0F56A200B2476B /* Feature */,
 				A0E007D32B0F560800B2476B /* App */,
 				A0E007D22B0F55DD00B2476B /* Resource */,
@@ -140,6 +176,10 @@
 		A0E007D42B0F56A200B2476B /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				A07DD9012B1133A7006DB7E0 /* Setting */,
+				A07DD9002B113395006DB7E0 /* Matching */,
+				A07DD8FF2B11337D006DB7E0 /* Home */,
+				A07DD8FE2B113375006DB7E0 /* Onboarding */,
 				A07DD8F22B111554006DB7E0 /* Test */,
 			);
 			path = Feature;
