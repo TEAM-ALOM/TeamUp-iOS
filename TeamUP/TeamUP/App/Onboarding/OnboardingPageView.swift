@@ -3,7 +3,7 @@
 //  TeamUP
 //
 //  Created by 박근경 on 2023/12/01.
-//
+// Test for gitD
 
 import SwiftUI
 
@@ -43,8 +43,7 @@ struct OnboardingPage: View {
                                     .shadow(color: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.25), radius: 10, y: 2)
                                 
                                 Text("시작하기")
-                                    .font(.custom("Pretendard", size: 20))
-                                    .fontWeight(/*@START_MENU_TOKEN@*/.semibold/*@END_MENU_TOKEN@*/)
+                                    .font(.pretendard(.SemiBold, size: 20))
                                     .foregroundColor(.white)
                             }
                         }
@@ -69,18 +68,17 @@ struct OnboardingView: View {
     var body: some View {
         VStack {
             Text(title)
-                .font(.custom("Pretendard", size: 30))
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .font(.pretendard(.Bold, size: 30))
                 .padding()
                 
             Text(subtitle)
-                .font(.custom("Pretendard", size: 18))
+                .font(.pretendard(.Regular, size: 18))
                 .foregroundColor(.gray)
+                .multilineTextAlignment(.center)
             Spacer()
             Image(imageName)
                 .resizable()
                 .frame(width: w, height: h)
-                .font(.system(size: 100))
                 .padding(.bottom, 20)
         }
         .frame(width: 550, height: 510)
