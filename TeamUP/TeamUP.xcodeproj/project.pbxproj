@@ -20,6 +20,12 @@
 		A07DD8F92B111AE5006DB7E0 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8E52B110B29006DB7E0 /* Pretendard-Thin.otf */; };
 		A07DD8FA2B111AE5006DB7E0 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8E42B110B29006DB7E0 /* Pretendard-ExtraLight.otf */; };
 		A07DD8FB2B111AE5006DB7E0 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8E72B110B29006DB7E0 /* Pretendard-SemiBold.otf */; };
+		A099B2272B21B2A2009B3F4E /* MatchingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A099B2262B21B2A2009B3F4E /* MatchingListView.swift */; };
+		A099B22A2B21B490009B3F4E /* Matching.swift in Sources */ = {isa = PBXBuildFile; fileRef = A099B2292B21B490009B3F4E /* Matching.swift */; };
+		A099B22C2B21B93C009B3F4E /* MatchingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A099B22B2B21B93C009B3F4E /* MatchingListViewModel.swift */; };
+		A099B22F2B21E940009B3F4E /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = A099B22E2B21E940009B3F4E /* Path.swift */; };
+		A099B2312B21E9AF009B3F4E /* PathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A099B2302B21E9AF009B3F4E /* PathType.swift */; };
+		A099B2332B21EB06009B3F4E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A099B2322B21EB06009B3F4E /* Date+Extension.swift */; };
 		A0E007C32B0F552500B2476B /* TeamUPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E007C22B0F552500B2476B /* TeamUPApp.swift */; };
 		A0E007C52B0F552500B2476B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E007C42B0F552500B2476B /* ContentView.swift */; };
 		A0E007C72B0F552700B2476B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E007C62B0F552700B2476B /* Assets.xcassets */; };
@@ -42,6 +48,12 @@
 		A07DD8ED2B110C2F006DB7E0 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		A07DD8EF2B110E0F006DB7E0 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		A07DD8F12B111337006DB7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A099B2262B21B2A2009B3F4E /* MatchingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingListView.swift; sourceTree = "<group>"; };
+		A099B2292B21B490009B3F4E /* Matching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matching.swift; sourceTree = "<group>"; };
+		A099B22B2B21B93C009B3F4E /* MatchingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingListViewModel.swift; sourceTree = "<group>"; };
+		A099B22E2B21E940009B3F4E /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		A099B2302B21E9AF009B3F4E /* PathType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathType.swift; sourceTree = "<group>"; };
+		A099B2322B21EB06009B3F4E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		A0E007BF2B0F552500B2476B /* TeamUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E007C22B0F552500B2476B /* TeamUPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamUPApp.swift; sourceTree = "<group>"; };
 		A0E007C42B0F552500B2476B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,11 +104,13 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		A07DD9002B113395006DB7E0 /* Matching */ = {
+		A07DD9002B113395006DB7E0 /* MatchingListView */ = {
 			isa = PBXGroup;
 			children = (
+				A099B2262B21B2A2009B3F4E /* MatchingListView.swift */,
+				A099B22B2B21B93C009B3F4E /* MatchingListViewModel.swift */,
 			);
-			path = Matching;
+			path = MatchingListView;
 			sourceTree = "<group>";
 		};
 		A07DD9012B1133A7006DB7E0 /* Setting */ = {
@@ -119,6 +133,23 @@
 			children = (
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		A099B2282B21B483009B3F4E /* Matching */ = {
+			isa = PBXGroup;
+			children = (
+				A099B2292B21B490009B3F4E /* Matching.swift */,
+			);
+			path = Matching;
+			sourceTree = "<group>";
+		};
+		A099B22D2B21E92D009B3F4E /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				A099B22E2B21E940009B3F4E /* Path.swift */,
+				A099B2302B21E9AF009B3F4E /* PathType.swift */,
+			);
+			path = Path;
 			sourceTree = "<group>";
 		};
 		A0E007B62B0F552500B2476B = {
@@ -165,6 +196,7 @@
 			children = (
 				A07DD8ED2B110C2F006DB7E0 /* Color+Extension.swift */,
 				A07DD8EF2B110E0F006DB7E0 /* Font+Extension.swift */,
+				A099B2322B21EB06009B3F4E /* Date+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -172,6 +204,8 @@
 		A0E007D12B0F55D900B2476B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A099B22D2B21E92D009B3F4E /* Path */,
+				A099B2282B21B483009B3F4E /* Matching */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,7 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				A07DD9012B1133A7006DB7E0 /* Setting */,
-				A07DD9002B113395006DB7E0 /* Matching */,
+				A07DD9002B113395006DB7E0 /* MatchingListView */,
 				A07DD8FF2B11337D006DB7E0 /* Home */,
 				A07DD8FE2B113375006DB7E0 /* Onboarding */,
 				A07DD8F22B111554006DB7E0 /* Test */,
@@ -304,10 +338,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E007C52B0F552500B2476B /* ContentView.swift in Sources */,
+				A099B22C2B21B93C009B3F4E /* MatchingListViewModel.swift in Sources */,
+				A099B2272B21B2A2009B3F4E /* MatchingListView.swift in Sources */,
 				A07DD8EE2B110C2F006DB7E0 /* Color+Extension.swift in Sources */,
+				A099B22A2B21B490009B3F4E /* Matching.swift in Sources */,
+				A099B2332B21EB06009B3F4E /* Date+Extension.swift in Sources */,
+				A099B2312B21E9AF009B3F4E /* PathType.swift in Sources */,
 				A07DD8F02B110E0F006DB7E0 /* Font+Extension.swift in Sources */,
 				0FD81DFF2B18E049005060F3 /* OnboardingPageView.swift in Sources */,
 				A0E007C32B0F552500B2476B /* TeamUPApp.swift in Sources */,
+				A099B22F2B21E940009B3F4E /* Path.swift in Sources */,
 				0FD81E012B18F85C005060F3 /* tmploginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
