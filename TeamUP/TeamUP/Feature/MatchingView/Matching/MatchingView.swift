@@ -19,10 +19,16 @@ struct MatchingView: View {
                 .padding(.bottom, 40)
             
             Text("시간")
+            SelectTimeView(matchingViewModel: matchingViewModel)
+                .padding(.bottom, 40)
             
             Text("장소")
+            SelectPlaceView(matchingViewModel: matchingViewModel)
+                .padding(.bottom, 40)
             
             Text("인원")
+            SelectSizeView(matchingViewModel: matchingViewModel)
+                .padding(.bottom, 40)
             
             Text("자세한 설명")
             MatchingDescriptionView(matchingViewModel: matchingViewModel)
@@ -48,8 +54,26 @@ private struct MatchingTitleView: View {
 private struct SelectTimeView: View {
     @ObservedObject private var matchingViewModel: MatchingViewModel
     
+    fileprivate init(matchingViewModel: MatchingViewModel) {
+        self.matchingViewModel = matchingViewModel
+    }
+    
     fileprivate var body: some View {
-        Text("시간")
+        DatePicker("", selection: $matchingViewModel.time)
+            .labelsHidden()
+    }
+}
+
+// MARK: - 장소 선택 뷰
+private struct SelectPlaceView: View {
+    @ObservedObject private var matchingViewModel: MatchingViewModel
+    
+    fileprivate init(matchingViewModel: MatchingViewModel) {
+        self.matchingViewModel = matchingViewModel
+    }
+    
+    fileprivate var body: some View {
+        TextField("장소를 입력하세요.", text: $matchingViewModel.place)
     }
 }
 
@@ -57,11 +81,19 @@ private struct SelectTimeView: View {
 private struct SelectSizeView: View {
     @ObservedObject private var matchingViewModel: MatchingViewModel
     
+    fileprivate init(matchingViewModel: MatchingViewModel) {
+        self.matchingViewModel = matchingViewModel
+    }
+    
     fileprivate var body: some View {
-        Text("인원")
+        Picker("",selection: $matchingViewModel.size) {
+            ForEach(0..<20) {num in
+                Text("\(num)")
+            }
+        }
+            
     }
 }
-
 
 // MARK: - 디테일 글 작성 뷰
 private struct MatchingDescriptionView: View {
