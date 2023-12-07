@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: - MainView
+// MARK: - 매칭리스트 뷰
 struct MatchingListView: View {
     @EnvironmentObject private var matchingListViewModel: MatchingListViewModel
     @EnvironmentObject private var pathModel: PathModel

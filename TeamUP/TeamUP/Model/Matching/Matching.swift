@@ -9,7 +9,7 @@ import Foundation
 
 struct Matching: Hashable {
     var title: String
-    var date: Date
+    var time: Date
     var location: String
     var participants: [Participant]
     var id = UUID()
