@@ -13,27 +13,43 @@ struct MatchingView: View {
     @StateObject private var matchingViewModel = MatchingViewModel()
     
     var body: some View {
-        VStack(alignment: .leading){
-            Text("제목")
-            MatchingTitleView(matchingViewModel: matchingViewModel)
-                .padding(.bottom, 40)
+        ScrollView{
+            VStack(alignment: .leading){
+                Text("제목")
+                MatchingTitleView(matchingViewModel: matchingViewModel)
+                    .padding(.bottom, 40)
+                
+                Text("시간")
+                SelectTimeView(matchingViewModel: matchingViewModel)
+                    .padding(.bottom, 40)
+                
+                Text("장소")
+                SelectPlaceView(matchingViewModel: matchingViewModel)
+                    .padding(.bottom, 40)
+                
+                Text("인원")
+                SelectSizeView(matchingViewModel: matchingViewModel)
+                    .padding(.bottom, 40)
+                
+                Text("자세한 설명")
+                MatchingDescriptionView(matchingViewModel: matchingViewModel)
+            }
+            .padding()
             
-            Text("시간")
-            SelectTimeView(matchingViewModel: matchingViewModel)
-                .padding(.bottom, 40)
-            
-            Text("장소")
-            SelectPlaceView(matchingViewModel: matchingViewModel)
-                .padding(.bottom, 40)
-            
-            Text("인원")
-            SelectSizeView(matchingViewModel: matchingViewModel)
-                .padding(.bottom, 40)
-            
-            Text("자세한 설명")
-            MatchingDescriptionView(matchingViewModel: matchingViewModel)
+            Button(
+                action: {
+                    matchingListViewModel.addMatching(
+                        .init(
+                            title: matchingViewModel.title,
+                            time: matchingViewModel.time,
+                            location: matchingViewModel.place,
+                            participants: matchingViewModel.size
+                        )
+                    )
+            }, label: {
+                Text("생성하기")
+            })
         }
-        .padding()
     }
 }
 

@@ -11,12 +11,12 @@ struct Matching: Hashable {
     var title: String
     var time: Date
     var location: String
-    var participants: [Participant]
+    var participants: Int
     var id = UUID()
 }
 
-struct Participant: Hashable {
-    var name: String
-    var age: Int
-    // 참가자 정보 속성들...
-}
+//struct Participant: Hashable {
+//    var name: String
+//    var age: Int
+//    // 참가자 정보 속성들...
+//}
