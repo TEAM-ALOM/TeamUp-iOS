@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FD81DFF2B18E049005060F3 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD81DFE2B18E049005060F3 /* OnboardingPageView.swift */; };
+		0FD81DFF2B18E049005060F3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD81DFE2B18E049005060F3 /* OnboardingView.swift */; };
 		0FD81E012B18F85C005060F3 /* tmploginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD81E002B18F85C005060F3 /* tmploginView.swift */; };
 		A07DD8EE2B110C2F006DB7E0 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07DD8ED2B110C2F006DB7E0 /* Color+Extension.swift */; };
 		A07DD8F02B110E0F006DB7E0 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07DD8EF2B110E0F006DB7E0 /* Font+Extension.swift */; };
@@ -36,7 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0FD81DFE2B18E049005060F3 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		0FD81DFE2B18E049005060F3 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		0FD81E002B18F85C005060F3 /* tmploginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmploginView.swift; sourceTree = "<group>"; };
 		A07DD8E42B110B29006DB7E0 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		A07DD8E52B110B29006DB7E0 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
@@ -77,15 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FD81DF72B188B88005060F3 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				0FD81DFE2B18E049005060F3 /* OnboardingPageView.swift */,
-				0FD81E002B18F85C005060F3 /* tmploginView.swift */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
 		A07DD8F22B111554006DB7E0 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +88,8 @@
 		A07DD8FE2B113375006DB7E0 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				0FD81DFE2B18E049005060F3 /* OnboardingView.swift */,
+				0FD81E002B18F85C005060F3 /* tmploginView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -236,7 +229,6 @@
 		A0E007D32B0F560800B2476B /* App */ = {
 			isa = PBXGroup;
 			children = (
-				0FD81DF72B188B88005060F3 /* Onboarding */,
 				A0E007C22B0F552500B2476B /* TeamUPApp.swift */,
 				A0E007D62B0F573800B2476B /* Launch Screen.storyboard */,
 			);
@@ -361,7 +353,7 @@
 				A099B2312B21E9AF009B3F4E /* PathType.swift in Sources */,
 				A07DD8F02B110E0F006DB7E0 /* Font+Extension.swift in Sources */,
 				A099B23A2B21F38F009B3F4E /* MatchingViewModel.swift in Sources */,
-				0FD81DFF2B18E049005060F3 /* OnboardingPageView.swift in Sources */,
+				0FD81DFF2B18E049005060F3 /* OnboardingView.swift in Sources */,
 				A0E007C32B0F552500B2476B /* TeamUPApp.swift in Sources */,
 				A099B22F2B21E940009B3F4E /* Path.swift in Sources */,
 				0FD81E012B18F85C005060F3 /* tmploginView.swift in Sources */,

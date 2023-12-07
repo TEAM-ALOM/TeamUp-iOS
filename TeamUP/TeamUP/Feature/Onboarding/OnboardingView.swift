@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OnboardingPage: View {
+struct OnboardingView: View {
     let _imageName: [String] = ["OnboardingImage01", "OnboardingImage02", "OnboardingImage03"]
     let _title: [String] = ["새로운 매칭을 찾아요", "다양한 스포츠를 만나요", "지금 시작하세요!"]
     let _subtitle: [String] = ["원하는 경기에 참여하세요!", "축구, 야구, 농구, E-Sports 매칭을 개최해요!\n주요 종목 외의 경기도 개최할 수 있어요!", "팀업과 함께 경기를 시작해봐요!"]
@@ -21,7 +21,7 @@ struct OnboardingPage: View {
                     VStack {
                         TabView {
                             ForEach(0..<3, id: \.self) { index in
-                                OnboardingView(imageName: _imageName[index],
+                                Onboarding(imageName: _imageName[index],
                                                title: _title[index],
                                                subtitle: _subtitle[index],
                                                w:_w[index], h:_h[index])
@@ -59,7 +59,7 @@ struct OnboardingPage: View {
       }
         
 }
-struct OnboardingView: View {
+struct Onboarding: View {
     let imageName: String
     let title: String
     let subtitle: String
@@ -85,5 +85,5 @@ struct OnboardingView: View {
     }
 }
 #Preview {
-    OnboardingPage()
+    OnboardingView()
 }
