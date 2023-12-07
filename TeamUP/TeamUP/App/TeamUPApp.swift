@@ -11,7 +11,9 @@ import SwiftUI
 struct TeamUPApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MatchingListView()
+                .environmentObject(MatchingListViewModel())
+                .environmentObject(PathModel())
         }
     }
 }
