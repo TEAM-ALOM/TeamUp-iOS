@@ -27,7 +27,9 @@ struct MatchingListView: View {
             }
             VStack{
                 Spacer()
+                
                 CreateMatchingBtn()
+                
             }
         }
     }
@@ -56,7 +58,7 @@ private struct MatchingListContentView: View {
 private struct MatchingCellView: View {
     @EnvironmentObject private var matchingListViewModel: MatchingListViewModel
     
-    private var matching: Matching
+    fileprivate var matching: Matching
     
     fileprivate init(
         matching: Matching
@@ -87,7 +89,7 @@ private struct CreateMatchingBtn: View {
     fileprivate var body: some View {
         Button(
             action: {
-                pathModel.paths.append(.createMatchingView)
+                pathModel.paths.append(.MatchingView)
             },
             label: {
                 ZStack {

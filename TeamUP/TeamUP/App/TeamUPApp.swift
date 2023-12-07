@@ -12,6 +12,8 @@ struct TeamUPApp: App {
     var body: some Scene {
         WindowGroup {
             MatchingListView()
+                .environmentObject(MatchingListViewModel())
+                .environmentObject(PathModel())
         }
     }
 }

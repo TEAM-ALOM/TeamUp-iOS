@@ -8,5 +8,5 @@
 import Foundation
 
 enum PathType: Hashable {
-    case createMatchingView
+    case MatchingView
 }
