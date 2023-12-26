@@ -11,9 +11,18 @@ struct Matching: Hashable {
     var title: String
     var time: Date
     var location: String
+    var sportsType: String
     var participants: Int
     var id = UUID()
 }
+
+//enum sportsType {
+//    case soccer
+//    case baseball
+//    case basketball
+//    case eSports
+//    case etc
+//}
 
 //struct Participant: Hashable {
 //    var name: String

@@ -23,8 +23,7 @@ struct MatchingDetailView: View {
                     VStack(alignment: .leading) {
                         
                         HStack{
-                            
-                            sportsType()
+                            sportsTypeBadge()
                             
                             Text("한강 뛸 사람 모집해요.")
                                 .font(.pretendard(.Medium, size: 32))
@@ -70,18 +69,27 @@ private struct CustomNavigatorBar: View {
     fileprivate var body: some View {
         
         HStack{
-            Image("arrow")
+            Button {
+                //code
+            } label: {
+                Image("arrow")
+            }
+
             Spacer()
-            Image("Option")
+            Button {
+                //code
+            } label: {
+                Image("Option")
+                    .padding(.horizontal)
+            }
         }
-        
     }
 }
 
 
 
-// MARK: - sportsType
-private struct sportsType: View {
+// MARK: - sportsTypeBadge
+private struct sportsTypeBadge: View {
     
     fileprivate var body: some View {
         

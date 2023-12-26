@@ -10,17 +10,20 @@ import SwiftUI
 struct CustomRoundedBtn: View {
     
     var text: String
+    let isActive: Bool
     
     init(
-        text: String = "text"
+        text: String = "text",
+        isActive: Bool = true
     ) {
+        self.isActive = isActive
         self.text = text
     }
     
     var body: some View {
         ZStack {
             Rectangle()
-                .fill(Color.MainColor)
+                .fill(isActive ? Color.MainColor : Color.customGray01)
                 .frame(width: 330, height: 60)
                 .cornerRadius(20)
                 .shadow(color: .black.opacity(0.25), radius: 5, x: 0, y: 2)

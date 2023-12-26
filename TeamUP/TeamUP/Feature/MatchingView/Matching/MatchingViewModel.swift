@@ -12,6 +12,7 @@ class MatchingViewModel: ObservableObject {
     @Published var time: Date
     @Published var day: Date
     @Published var place: String
+    @Published var sportsType: String
     @Published var size: Int
     @Published var description: String
     
@@ -20,6 +21,7 @@ class MatchingViewModel: ObservableObject {
         time: Date = Date(),
         day: Date = Date(),
         place: String = "",
+        sprotsType: String = "",
         size: Int = Int(),
         description: String = ""
     ) {
@@ -27,6 +29,7 @@ class MatchingViewModel: ObservableObject {
         self.time = time
         self.day = day
         self.place = place
+        self.sportsType = sprotsType
         self.size = size
         self.description = description
     }

@@ -15,6 +15,9 @@ struct MatchingView: View {
     var body: some View {
         ScrollView{
             VStack(alignment: .leading){
+                
+                Text("종목")
+                
                 Text("제목")
                 MatchingTitleView(matchingViewModel: matchingViewModel)
                     .padding(.bottom, 40)
@@ -43,6 +46,7 @@ struct MatchingView: View {
                             title: matchingViewModel.title,
                             time: matchingViewModel.time,
                             location: matchingViewModel.place,
+                            sportsType: matchingViewModel.sportsType,
                             participants: matchingViewModel.size
                         )
                     )
