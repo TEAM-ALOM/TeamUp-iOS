@@ -11,6 +11,7 @@ struct SettingView: View {
     var body: some View {
         titlebar()
         profile(name:"은서우", major: "지능기전공학부")
+        accountlist()
         Spacer()
             
         
@@ -58,6 +59,44 @@ struct profile: View {
                 Spacer()
             }
         }
+    }
+}
+struct accountlist: View {
+    var body: some View {
+        VStack {
+            ZStack(alignment: .leading){
+                Rectangle()
+                    .fill(Color(hue: 1.0, saturation: 0.008, brightness: 0.87))
+                    .frame(height: 47)
+                
+                Text("계정")
+                    .font(.pretendard(.Medium, size: 20))
+                    .padding(.leading, 30);
+            }
+            accountlist_mini(title: "프로필 수정")
+            accountlist_mini(title: "경기 다시보기")
+            accountlist_mini(title: "로그아웃")
+            accountlist_mini(title: "문의하기")
+            
+        }
+    }
+}
+struct accountlist_mini: View {
+    let title: String
+    
+    var body: some View {
+        ZStack(alignment: .leading) {
+            Rectangle()
+                .stroke(Color.gray01, lineWidth:1)
+                .frame(height: 39)
+
+            Text(title)
+                .padding(.leading, 30)
+                .font(.pretendard(.Regular, size: 16))
+                .foregroundColor(Color.customGray02)
+        }
+        .padding(EdgeInsets(top: -5, leading: 1, bottom: 2, trailing: 1))
+        
     }
 }
 #Preview {
