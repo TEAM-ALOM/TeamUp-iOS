@@ -10,7 +10,7 @@ import SwiftUI
 struct Header : View {
     let title: String
     var body: some View {
-        ZStack() {
+        ZStack {
             Rectangle()
                 .fill(.white.shadow(.drop(color: Color(hue: 0.035, saturation: 0.0, brightness: 0.0, opacity: 0.1), radius: 10, x:0, y:2)))
                 .shadow(color:Color(hue: 0.035, saturation: 0.0, brightness: 0.0, opacity: 0.1), radius: 1, y:2)
@@ -30,7 +30,6 @@ struct Header : View {
                 .offset(y:22)
         }
         .ignoresSafeArea()
-        Spacer()
     }
 }
 #Preview {
