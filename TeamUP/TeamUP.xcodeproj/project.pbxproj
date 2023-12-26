@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0FD81DFF2B18E049005060F3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD81DFE2B18E049005060F3 /* OnboardingView.swift */; };
 		0FD81E012B18F85C005060F3 /* tmploginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD81E002B18F85C005060F3 /* tmploginView.swift */; };
+		A043CFE02B390D8E00FAA739 /* MatchingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043CFDF2B390D8E00FAA739 /* MatchingDetailView.swift */; };
 		A07DD8EE2B110C2F006DB7E0 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07DD8ED2B110C2F006DB7E0 /* Color+Extension.swift */; };
 		A07DD8F02B110E0F006DB7E0 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07DD8EF2B110E0F006DB7E0 /* Font+Extension.swift */; };
 		A07DD8F32B111AE0006DB7E0 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A07DD8E62B110B29006DB7E0 /* Pretendard-Black.otf */; };
@@ -34,11 +35,13 @@
 		A0E007C72B0F552700B2476B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E007C62B0F552700B2476B /* Assets.xcassets */; };
 		A0E007CA2B0F552700B2476B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E007C92B0F552700B2476B /* Preview Assets.xcassets */; };
 		A0E007D72B0F573800B2476B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E007D62B0F573800B2476B /* Launch Screen.storyboard */; };
+		A0FC03182B3A5A1F00BE3558 /* CustomRoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC03172B3A5A1F00BE3558 /* CustomRoundedBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FD81DFE2B18E049005060F3 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		0FD81E002B18F85C005060F3 /* tmploginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmploginView.swift; sourceTree = "<group>"; };
+		A043CFDF2B390D8E00FAA739 /* MatchingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingDetailView.swift; sourceTree = "<group>"; };
 		A07DD8E42B110B29006DB7E0 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		A07DD8E52B110B29006DB7E0 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		A07DD8E62B110B29006DB7E0 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		A0E007C62B0F552700B2476B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0E007C92B0F552700B2476B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0E007D62B0F573800B2476B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A0FC03172B3A5A1F00BE3558 /* CustomRoundedBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 			children = (
 				A099B2362B21F361009B3F4E /* Matching */,
 				A099B2262B21B2A2009B3F4E /* MatchingListView.swift */,
+				A043CFDF2B390D8E00FAA739 /* MatchingDetailView.swift */,
 				A099B22B2B21B93C009B3F4E /* MatchingListViewModel.swift */,
 			);
 			path = MatchingView;
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A099B23C2B22344A009B3F4E /* CustomRegularBtn.swift */,
+				A0FC03172B3A5A1F00BE3558 /* CustomRoundedBtn.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -364,8 +370,10 @@
 				A099B2332B21EB06009B3F4E /* Date+Extension.swift in Sources */,
 				A099B2312B21E9AF009B3F4E /* PathType.swift in Sources */,
 				A07DD8F02B110E0F006DB7E0 /* Font+Extension.swift in Sources */,
+				A0FC03182B3A5A1F00BE3558 /* CustomRoundedBtn.swift in Sources */,
 				A099B23A2B21F38F009B3F4E /* MatchingViewModel.swift in Sources */,
 				0FD81DFF2B18E049005060F3 /* OnboardingView.swift in Sources */,
+				A043CFE02B390D8E00FAA739 /* MatchingDetailView.swift in Sources */,
 				A0E007C32B0F552500B2476B /* TeamUPApp.swift in Sources */,
 				A099B22F2B21E940009B3F4E /* Path.swift in Sources */,
 				0FD81E012B18F85C005060F3 /* tmploginView.swift in Sources */,
