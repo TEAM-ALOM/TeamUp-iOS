@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct MatchingDetailView: View {
+    @EnvironmentObject private var matchingViewModel: MatchingViewModel
+    @EnvironmentObject private var matchingListViewModel: MatchingListViewModel
+    @EnvironmentObject private var pathModel: PathModel
     
     // MARK: - Main
     var body: some View {
         ZStack {
-            
             ScrollView {
                 VStack {
                     Image("CoverImage 1")
@@ -25,7 +27,7 @@ struct MatchingDetailView: View {
                         HStack{
                             sportsTypeBadge()
                             
-                            Text("한강 뛸 사람 모집해요.")
+                            Text(matchingViewModel.title)
                                 .font(.pretendard(.Medium, size: 32))
                             
                         }
@@ -53,7 +55,7 @@ struct MatchingDetailView: View {
                 
                 Spacer()
                 
-                CustomRoundedBtn()
+                CustomRegularBtn(isRounded: true, text: "매칭 신청하기")
                     .padding(.bottom, 30)
             }
             
@@ -65,12 +67,13 @@ struct MatchingDetailView: View {
 
 // MARK: - NavigatorBar
 private struct CustomNavigatorBar: View {
+    @EnvironmentObject private var pathModel: PathModel
     
     fileprivate var body: some View {
         
         HStack{
             Button {
-                //code
+                pathModel.paths.append(.MatchingListView)
             } label: {
                 Image("arrow")
             }
@@ -122,13 +125,14 @@ private struct Dividebar: View {
 
 // MARK: - infoList
 private struct infoList: View {
+    @EnvironmentObject private var matchingViewModel: MatchingViewModel
     
     fileprivate var body: some View {
         VStack(alignment: .leading, spacing: 30) {
             
             VStack(alignment: . leading, spacing: 10) {
                 Label("10/13 13:00 ~ 14:00", image: "Calendar")
-                Label("뚝섬유원지역", image: "Location")
+                Label(matchingViewModel.location, image: "Location")
                 Label("1/3", image: "Person")
             }
             .font(.pretendard(.Regular, size: 20))
@@ -153,5 +157,8 @@ private struct infoList: View {
 struct Previews_MatchingDetailView: PreviewProvider {
     static var previews: some View {
         MatchingDetailView()
+            .environmentObject(MatchingViewModel())
+            .environmentObject(MatchingListViewModel())
+            .environmentObject(PathModel())
     }
 }

@@ -45,7 +45,7 @@ struct MatchingView: View {
                         .init(
                             title: matchingViewModel.title,
                             time: matchingViewModel.time,
-                            location: matchingViewModel.place,
+                            location: matchingViewModel.location,
                             sportsType: matchingViewModel.sportsType,
                             participants: matchingViewModel.size
                         )
@@ -93,7 +93,7 @@ private struct SelectPlaceView: View {
     }
     
     fileprivate var body: some View {
-        TextField("장소를 입력하세요.", text: $matchingViewModel.place)
+        TextField("장소를 입력하세요.", text: $matchingViewModel.location)
     }
 }
 
