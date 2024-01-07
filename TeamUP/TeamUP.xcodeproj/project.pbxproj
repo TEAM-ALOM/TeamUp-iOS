@@ -34,6 +34,7 @@
 		A0E007C72B0F552700B2476B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E007C62B0F552700B2476B /* Assets.xcassets */; };
 		A0E007CA2B0F552700B2476B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E007C92B0F552700B2476B /* Preview Assets.xcassets */; };
 		A0E007D72B0F573800B2476B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E007D62B0F573800B2476B /* Launch Screen.storyboard */; };
+		FAEECB672B410AF600361D66 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEECB662B410AF600361D66 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		A0E007C62B0F552700B2476B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0E007C92B0F552700B2476B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0E007D62B0F573800B2476B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FAEECB662B410AF600361D66 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		A07DD8FF2B11337D006DB7E0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FAEECB662B410AF600361D66 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				A099B23A2B21F38F009B3F4E /* MatchingViewModel.swift in Sources */,
 				0FD81DFF2B18E049005060F3 /* OnboardingView.swift in Sources */,
 				A0E007C32B0F552500B2476B /* TeamUPApp.swift in Sources */,
+				FAEECB672B410AF600361D66 /* HomeView.swift in Sources */,
 				A099B22F2B21E940009B3F4E /* Path.swift in Sources */,
 				0FD81E012B18F85C005060F3 /* tmploginView.swift in Sources */,
 			);
