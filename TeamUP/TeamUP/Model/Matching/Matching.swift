@@ -9,11 +9,18 @@ import Foundation
 
 struct Matching: Hashable {
     var title: String
+    var date: Date
     var time: Date
     var location: String
     var sportsType: SportsType
     var participants: Int
     var id = UUID()
+    
+    
+    // 시간 가공하기
+    var convertedDayAndTime: String {
+        String("\(time.formattedDay) - \(time.formattedTime)시간 전")
+    }
 }
 
 enum SportsType: String {
@@ -25,7 +32,8 @@ enum SportsType: String {
 }
 
 //struct Participant: Hashable {
-//    var name: String
-//    var age: Int
+//    var name: String //이름
+//    var age: Int //나이
+//    var major: String //전공
 //    // 참가자 정보 속성들...
 //}

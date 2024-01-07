@@ -4,6 +4,13 @@
 //
 //  Created by 은서우 on 2023/12/07.
 //
+// 필요한 시간 데이터
+
+// 1. 매칭글 올린 시간
+// 2. 경기 시작시간
+// 3. 경기 종료시간
+// 4. 매칭글 마감 시간 - 현재시간
+
 
 import Foundation
 
@@ -24,7 +31,7 @@ extension Date {
       let numOfDifference = calendar.dateComponents([.day], from: nowStartOfDay, to: dateStartOfday).day!
       
       if numOfDifference == 0 {
-        return "오늘"
+        return "진행 중"
       } else {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "ko_KR")

@@ -44,6 +44,7 @@ struct MatchingView: View {
                     matchingListViewModel.addMatching(
                         .init(
                             title: matchingViewModel.title,
+                            date: matchingViewModel.day, // 변수명 확인 볼것
                             time: matchingViewModel.time,
                             location: matchingViewModel.location,
                             sportsType: matchingViewModel.sportsType,
@@ -51,7 +52,7 @@ struct MatchingView: View {
                         )
                     )
             }, label: {
-                Text("생성하기")
+                CustomRegularBtn(isRounded: true, text: "참가 신청하기")
             })
         }
     }
